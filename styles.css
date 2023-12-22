@@ -7,13 +7,22 @@ grey - #95a5a6;
 red - #ee5253
  */
 
-h2 {
-    color: #000;
+header {
     background-color: #0fb9b1;
-    padding: 15px 10px;
     margin-top: -10px;
     margin-left: -10px;
     margin-right: -10px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-recipe {
+    background-color: fff;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
 }
 
 body {
@@ -25,7 +34,7 @@ body {
 main {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 6%;
+    margin-top: 4%;
 }
 
 span {
@@ -33,12 +42,12 @@ span {
 }
 
 section {
-    padding-top: 3%;
-    padding-right: 10%;
-    padding-bottom: 5%;
     padding-left: 2%;
     background-color: rgba(225, 225, 225, .9);
     font-size: 150%;
+    margin-right: 5%;
+    width: 525px;
+    height: 400px;
 }
 
 input {
@@ -46,7 +55,7 @@ input {
     height: 1.15em;
 }
 
-button {
+.lets-cook {
     background-color: #0fb9b1;
     border: none;
     border-radius: 5px;
@@ -59,9 +68,11 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0% 9%;
+    flex-direction: column;
+    width: 550px;
+    height: 400px;
 }
 
 #cooking-pot {
-    width: 50%;
+    width: 25%;
 }

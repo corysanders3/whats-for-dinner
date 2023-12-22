@@ -50,10 +50,11 @@ var desserts = [
     'Eclairs',
 ];
 
+var randomDish = '';
 
 
 //query selectors
-var cookButton = document.querySelector('button');
+var cookButton = document.querySelector('.lets-cook');
 var showDish = document.querySelector('div');
 var radioButtons = document.getElementsByName('meal')
 
@@ -83,9 +84,19 @@ function checkRadioButtons() {
 
 function getRandomDish(dishes) {
     var randomIndex = Math.floor(Math.random() * dishes.length)
-    var randomDish = dishes[randomIndex]
+    randomDish = dishes[randomIndex]
     console.log(randomDish)
+    showRandomDish()
 };
+
+function showRandomDish() {
+    showDish.innerHTML = `
+    <p><em>You should make:</em></p>
+    <h2>${randomDish}!</h2>
+    `
+};
+
+
 
 
 
